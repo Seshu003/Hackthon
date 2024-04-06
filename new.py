@@ -60,7 +60,7 @@ def predict():
         season_mapping = {'summer': 1, 'spring': 2, 'winter': 3, 'rainy': 4}
         season = season_mapping.get(form_data['seasons'], 0)  # Default to 0 if season not found
 
-        day_mapping = {'holiday': 1, 'work': 0}
+        day_mapping = {'holiday': 1,'work': 0}
         day = day_mapping.get(form_data['day'], 0)  # Default to 0 if day not found
     except ValueError:
         return jsonify({'error': 'Invalid input data. Ensure all numeric values are properly formatted'}), 400
