@@ -1,0 +1,231 @@
+body{
+			background-color: black;
+			width: 100%;
+		}
+		.home{
+			height: 700px;
+			width: 100%;
+			background-color: black;
+		}
+		.navbar{
+			height: 60px;
+			width: 100%;
+			background-color: grey;
+		}
+		.logo{
+			height: 60px;
+			width: 50%;
+			float: left;
+		}
+		.links{
+			height: 60px;
+			width: 50%;
+			float: right;
+		}
+		.olalogo{
+			margin-top: 8px;
+			margin-left: 40px;
+		}
+		.demand{
+			margin-right: 40px;
+			margin-top: -250px;
+			height: 300px;
+			width: 300px;
+			float: right;
+		}
+		ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		}
+		li {
+		  display: inline;
+		  float: right;
+		  padding-right: 40px;
+		  margin-top: 12px;
+		  font-size: 25px;
+		}
+		a {
+			font-family: "Expletus Sans";
+			text-decoration: none;
+			color: black;
+		}
+		.home-content{
+			color: whitesmoke;
+			font-family: "Phudu";
+			letter-spacing: 3px;
+			height: 500px;
+		}
+		h5,.vega{
+			text-align: center;
+		}
+		.vega{
+			letter-spacing: 8px;
+			font-size: 40px;
+		}
+		.heading{
+			font-size: 60px;
+			text-align: center;
+		}
+		.home-end{
+			height: 10px;
+			width: 100%;
+			background-color: grey;
+			margin-top: 74px;
+		}
+		.problem{
+			margin-left: 130px;
+		}
+
+/*		about css*/
+
+		#about{
+			height: 700px;
+			width: 100%;
+			background-color: black;
+		}
+		.Aboutola{
+			height: 60px;
+			width: 100%;
+			background-color: black;
+		}
+		.secondola{
+			height: 50px;
+			width: 120px;
+			margin-top: 7px;
+			margin-left: 50px;
+		}
+		.about-content{
+			height: 500px;
+			width: 100%;
+			background-color: grey;
+			font-family: "Kode Mono";
+		}
+		.about-content-one{
+			float: left;
+			width: 70%;
+			height: 500px;
+			background-color: black;
+		}
+		.content{
+			font-size: 20px;
+			margin-left: 20px;
+			margin-top: 80px;
+			color: whitesmoke;
+		}
+		strong{
+			font-size: 30px;
+			margin-left: 0px;
+		}
+		.about-content-two{
+			float: right;
+			width: 30%;
+			height: 500px;
+			background-color: black;
+		}
+		.aboutend{
+			height: 10px;
+			width: 100%;
+			background-color: grey;
+			margin-top: 74px;
+		}
+		.aboustart{
+			height: 30px;
+			width: 100%;
+			background-color: black;
+
+		}
+		.scooty{
+			height: 370px;
+			width: 400px;
+			margin-top: 200px;
+		}
+
+/*		predict css*/
+
+		#predict{
+			height: 700px;
+			width: 100%;
+			background-color: grey;
+			font-family: "Josefin Sans";
+		}
+		.forms{
+			height: 450px;
+			width: 550px;
+			background-color: grey;
+			max-width: fit-content;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: -30px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+			border-radius: 20px;
+
+		}
+		.pred-start,.res-start{
+			height: 30px;
+			width: 100%;
+			background-color: black;
+		}
+		.pred-end{
+			height: 20px;
+			width: 100%;
+			background-color: black;
+			margin-top: 50px;
+		}
+		.enter,h4{
+			text-align: center;
+			letter-spacing: 3px;
+		}
+		form{
+			padding-top: 20px;
+			text-align: center;
+			font-size: 20px;
+			padding-bottom: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		#submit{
+			  background-color: black;
+			  border: none;
+			  color: white;
+			  padding: 15px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+		}
+		.sub{
+			color: white;
+		}
+		.pred-btn{
+			height: 30px;
+			width: 68px;
+			background-color: grey;
+			border-radius: 10px;
+			margin-left: 400px;
+			margin-top: 40px;
+		}
+		.href-btn{
+			background-color: transparent;
+			border: none;
+			padding: 6px;
+			padding-left: 8px;
+		}
+		h3{
+			color: whitesmoke;
+			margin-left: 315px;
+		}
+
+/*		result css*/
+		#main-res{
+			height: 100px;
+			width: 100%;
+			background-color: grey;
+		}
+		#result{
+			color: black;
+			font-size: 50px;
+			font-family: "Ojuju";
+			font-weight: 800;
+			text-align: center;
+		}
