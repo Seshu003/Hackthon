@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ola Bike Demand Forecasting</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='pn.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-motorcycle"></i>
+                <span class="logo-text">Ola Demand Predictor</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#predict">Predict</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <div class="hero-text">
+                <h1 class="heading">Smart Mobility Analytics</h1>
+                <h2 class="vega">Ola Bike Demand Forecasting</h2>
+                <p class="subtitle">Predict ride demand with advanced machine learning algorithms</p>
+                <button class="cta-button" onclick="scrollToSection('predict')">
+                    <i class="fas fa-chart-line"></i>
+                    Start Prediction
+                </button>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cards">
+                    <div class="stat-card">
+                        <i class="fas fa-motorcycle"></i>
+                        <h3>Real-time</h3>
+                        <p>Predictions</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>ML Powered</h3>
+                        <p>Analytics</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>High Accuracy</h3>
+                        <p>Forecasting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-header">
+                <h2>About the Project</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3><strong>Forecasting Demand for Ola Bike Rides</strong></h3>
+                    <p>This project leverages advanced machine learning techniques to predict the number of ride requests in specific time periods and locations. Our system analyzes historical data including:</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Time-based patterns and seasonality</li>
+                        <li><i class="fas fa-check"></i> Weather conditions and temperature</li>
+                        <li><i class="fas fa-check"></i> Holiday and working day patterns</li>
+                        <li><i class="fas fa-check"></i> Atmospheric conditions and humidity</li>
+                        <li><i class="fas fa-check"></i> Wind speed and environmental factors</li>
+                    </ul>
+                    <p>The goal is to enhance operational efficiency for Ola by optimizing resource allocation, improving customer experience, and minimizing costs through proactive planning based on predicted ride demand.</p>
+                </div>
+                <div class="about-visual">
+                    <div class="data-flow">
+                        <div class="flow-item">
+                            <i class="fas fa-database"></i>
+                            <span>Data Collection</span>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>ML Processing</span>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Prediction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prediction Section -->
+    <section id="predict" class="predict">
+        <div class="container">
+            <div class="predict-header">
+                <h2>Demand Prediction</h2>
+                <p>Enter the conditions to predict bike ride demand</p>
+            </div>
+            
+            <div class="prediction-container">
+                <div class="form-container">
+                    <form id="predictionForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="seasons">Season</label>
+                                <select id="seasons" name="seasons" required>
+                                    <option value="">Select Season</option>
+                                    <option value="summer">Summer</option>
+                                    <option value="spring">Spring</option>
+                                    <option value="winter">Winter</option>
+                                    <option value="rainy">Rainy</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="day">Day Type</label>
+                                <select id="day" name="day" required>
+                                    <option value="">Select Day Type</option>
+                                    <option value="holiday">Holiday</option>
+                                    <option value="work">Working Day</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="temp">Temperature (°C)</label>
+                                <input type="number" id="temp" name="temp" min="-10" max="50" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="a_temp">Atmospheric Temperature (°C)</label>
+                                <input type="number" id="a_temp" name="a_temp" min="-10" max="50" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="humidity">Humidity (%)</label>
+                                <input type="number" id="humidity" name="humidity" min="0" max="100" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="wind">Wind Speed (km/h)</label>
+                                <input type="number" id="wind" name="wind" min="0" max="100" step="0.1" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-magic"></i>
+                            Predict Demand
+                        </button>
+                    </form>
+                </div>
+
+                <div class="result-container">
+                    <div class="result-card" id="resultCard">
+                        <div class="result-header">
+                            <i class="fas fa-chart-pie"></i>
+                            <h3>Prediction Result</h3>
+                        </div>
+                        <div class="result-content">
+                            <div class="result-value" id="predictionResult">
+                                <span class="result-number">-</span>
+                                <span class="result-label">Expected Bookings</span>
+                            </div>
+                            <div class="result-status" id="demandStatus">
+                                <span class="status-indicator"></span>
+                                <span class="status-text">Enter data to predict</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <p>Processing your prediction...</p>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="toast-icon"></i>
+            <span class="toast-message"></span>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
